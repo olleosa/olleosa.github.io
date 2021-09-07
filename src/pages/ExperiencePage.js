@@ -56,8 +56,8 @@ class ExperiencePage extends Component {
     return (
       <div className="">
 
-        <div className="text-5xl pl-10 pb-5">work experience</div>
-        <div className="flex flex-col items-center space-y-3">
+        <div className="text-7xl pl-10 pb-5">work experience</div>
+        <div className="flex flex-col items-center space-y-3 text-xl">
           { experiences.map(( exp => {
             return <ExperienceComponent 
             jobTitle={ exp.jobTitle }

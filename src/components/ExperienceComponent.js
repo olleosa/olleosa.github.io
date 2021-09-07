@@ -1,4 +1,5 @@
 import { Component } from 'react';
+const emoji = require("emoji-dictionary");
 
 class ExperienceComponent extends Component {
   constructor(props) {
@@ -12,22 +13,22 @@ class ExperienceComponent extends Component {
 
   render () {
     return (
-      <div className="p-5 w-11/12 border flex flex-col shadow hover:border-purple-600" onClick={ this.toggleExperience }>
+      <div className="p-5 w-11/12 border flex flex-col shadow hover:border-green-500" onClick={ this.toggleExperience }>
         <div className="flex flex-row">
           <div className="w-full"><b>{ this.props.jobTitle }</b>, { this.props.company }</div>
-          <div className="w-full text-right">{ this.props.date }</div>
+          <div className="w-full text-right text-gray-400">{ this.props.date }</div>
         </div>
-        <div>
+        <div className="flex flex-row">
           { this.props.skills.map((value => {
-            return <div>{ value }</div>
+            return <div className="mr-1 px-2 bg-indigo-200">{ value }</div>
           }))}
         </div>
         
         { this.state.opened &&
-          <div>
+          <div className="pt-5">
             <ul>
               { this.props.points.map((value => {
-                return <li>{ value }</li>
+                return <li className="text=sm">{ emoji.getUnicode("sunflower") + "\t" + value }</li>
               }))}
             </ul>
           </div>
