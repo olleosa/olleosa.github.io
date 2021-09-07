@@ -13,7 +13,7 @@ class ExperienceComponent extends Component {
 
   render () {
     return (
-      <div className="p-5 w-11/12 border flex flex-col shadow hover:border-green-500" onClick={ this.toggleExperience }>
+      <div className="p-5 w-11/12 border flex flex-col shadow hover:border-red-200" onClick={ this.toggleExperience }>
         <div className="flex flex-row">
           <div className="w-full"><b>{ this.props.jobTitle }</b>, { this.props.company }</div>
           <div className="w-full text-right text-gray-400">{ this.props.date }</div>

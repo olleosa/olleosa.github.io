@@ -1,6 +1,7 @@
 import './App.css';
 import ExperiencePage from './pages/ExperiencePage';
 import HomePage from './pages/HomePage';
+import Resume from './files/Resume.pdf'
 
 import { 
   BrowserRouter as Router,
@@ -28,6 +29,26 @@ function App() {
                 </li>
               </ul>
             </nav>
+
+            <div className="w-full text-xl rounded-xl items-end flex h-full pb-16">
+              <ul className="m-5">
+                <li className="w-full">
+                  <a href="mailto:chen.samantha05@gmail.com" target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">Email</a>
+                </li>
+
+                <li className="w-full">
+                  <a href="https://ca.linkedin.com/in/samantha-chen-49a91a1a1" target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">LinkedIn</a>
+                </li>
+
+                <li className="w-full">
+                  <a href={ Resume } target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">Resume</a>
+                </li>
+
+                <li className="w-full">
+                  <a href="https://github.com/olleosa" target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">Github</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
 
