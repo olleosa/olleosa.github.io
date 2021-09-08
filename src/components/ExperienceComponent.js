@@ -14,10 +14,12 @@ class ExperienceComponent extends Component {
   render () {
     return (
       <div className="p-5 w-11/12 border flex flex-col shadow hover:border-black" onClick={ this.toggleExperience }>
+
         <div className="flex flex-row">
           <div className="w-full"><b>{ this.props.jobTitle }</b> // { this.props.company }</div>
           <div className="w-full text-right text-gray-400 text-sm">{ this.props.date }</div>
         </div>
+
         <div className="flex flex-row">
           { this.props.skills.map((value => {
             return <div className="mr-1 px-2 bg-indigo-200 text-sm">{ value }</div>

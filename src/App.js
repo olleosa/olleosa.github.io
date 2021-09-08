@@ -19,7 +19,7 @@ function App() {
       <Router>
         <div className="bg-white h-5/6 w-5/6 rounded-3xl shadow-2xl flex flex-row">
 
-          {/* Navigation */}
+          {/* Navigation Side bar */}
           <div className="bg-purple-200 shadow-xl rounded-l-3xl w-1/5 flex flex-col pt-16">
             <nav className="w-full">
               <ul className="m-5 space-y-1">
@@ -32,7 +32,7 @@ function App() {
               </ul>
             </nav>
 
-            {/* Links */}
+            {/* Links on Side Bar*/}
             <div className="w-full text-xl rounded-xl items-end flex h-full pb-16">
               <ul className="flex flex-row ml-5">
                 <li className="">
@@ -54,7 +54,7 @@ function App() {
             </div>
           </div>
 
-          {/* Content */}
+          {/* Content on Right*/}
           <div className="w-4/5 h-full p-10 pt-16 overflow-y-auto">
             <Switch>
               <Route path="/experience">

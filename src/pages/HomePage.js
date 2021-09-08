@@ -23,7 +23,6 @@ class HomePage extends Component {
 
         <div className="px-10 py-5 text-xl">
           I'm currently a fourth year computer science student at Carleton University and working part time as a software developer at Creative Layer!
-
           At the moment, I am mostly interested in full stack and mobile development.
         </div>
 

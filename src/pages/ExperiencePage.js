@@ -1,6 +1,5 @@
 import { Component } from 'react'
 import ExperienceComponent from '../components/ExperienceComponent'
-const emoji = require("emoji-dictionary");
 
 class ExperiencePage extends Component {
   constructor() {
