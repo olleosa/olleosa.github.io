@@ -19,7 +19,7 @@ class HomePage extends Component {
     const { hobbies } = this.state;
     return (
       <div>
-        <div className="text-7xl pl-10 pb-5">hi, i'm samantha!</div>
+        <div className="text-7xl pl-10 pb-5">Hi, I'm Samantha! { emoji.getUnicode("wave") } </div>
 
         <div className="px-10 py-5 text-xl">
           I'm currently a fourth year computer science student at Carleton University and working part time as a software developer at Creative Layer!
@@ -37,7 +37,7 @@ class HomePage extends Component {
         </div>
 
         <div className="px-10 py-5 text-xl">
-          If you have any questions or would just like to chat, feel free to reach out to me!
+          If you have any questions or would just like to chat, feel free to <a href="mailto:chen.samantha05@gmail.com" target="_blank" rel="noreferrer" className="text-purple-500">reach out</a> to me!
         </div>
       </div>
     )

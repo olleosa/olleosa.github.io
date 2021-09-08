@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import ExperienceComponent from '../components/ExperienceComponent'
+const emoji = require("emoji-dictionary");
 
 class ExperiencePage extends Component {
   constructor() {
@@ -56,7 +57,7 @@ class ExperiencePage extends Component {
     return (
       <div className="">
 
-        <div className="text-7xl pl-10 pb-5">work experience</div>
+        <div className="text-7xl pl-10 pb-5">Work Experience</div>
         <div className="flex flex-col items-center space-y-3 text-xl">
           { experiences.map(( exp => {
             return <ExperienceComponent 

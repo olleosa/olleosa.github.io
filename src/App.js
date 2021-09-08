@@ -1,7 +1,8 @@
 import './App.css';
 import ExperiencePage from './pages/ExperiencePage';
 import HomePage from './pages/HomePage';
-import Resume from './files/Resume.pdf'
+import Resume from './files/Resume.pdf';
+import { GitHub, Linkedin, Mail, FileText } from 'react-feather';
 
 import { 
   BrowserRouter as Router,
@@ -33,21 +34,21 @@ function App() {
 
             {/* Links */}
             <div className="w-full text-xl rounded-xl items-end flex h-full pb-16">
-              <ul className="m-5 w-full">
-                <li className="w-full">
-                  <a href="mailto:chen.samantha05@gmail.com" target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">Email</a>
+              <ul className="flex flex-row ml-5">
+                <li className="">
+                  <a href="mailto:chen.samantha05@gmail.com" target="_blank" className="inline-block w-full rounded-xl text-xl p-2 hover:bg-white" rel="noreferrer"><Mail /></a>
                 </li>
 
-                <li className="w-full">
-                  <a href="https://ca.linkedin.com/in/samantha-chen-49a91a1a1" target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">LinkedIn</a>
+                <li className="">
+                  <a href="https://ca.linkedin.com/in/samantha-chen-49a91a1a1" target="_blank" className="inline-block w-full rounded-xl text-xl p-2 hover:bg-white" rel="noreferrer"><Linkedin /></a>
                 </li>
 
-                <li className="w-full">
-                  <a href={ Resume } target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">Resume</a>
+                <li className="">
+                  <a href={ Resume } target="_blank" className="inline-block w-full rounded-xl text-xl p-2 hover:bg-white" rel="noreferrer"><FileText /></a>
                 </li>
 
-                <li className="w-full">
-                  <a href="https://github.com/olleosa" target="_blank" className="inline-block w-full rounded-xl text-xl px-5 py-2 hover:bg-white" rel="noreferrer">Github</a>
+                <li className="">
+                  <a href="https://github.com/olleosa" target="_blank" className="inline-block w-full rounded-xl text-xl p-2 hover:bg-white" rel="noreferrer"><GitHub /></a>
                 </li>
               </ul>
             </div>
